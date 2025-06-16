@@ -7,31 +7,39 @@
   <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-  <div class="container">
-    <h1>🔐 Gerador de Senhas</h1>
+  <main class="wrapper">
+    <div class="container">
+      <h1>🔐 Gerador de Senhas</h1>
 
-    <div class="senha-box">
-      <input type="text" id="senha" readonly placeholder="Clique para gerar uma senha" />
-      <button onclick="gerarSenha()">🔄 Gerar Senha</button>
-    </div>
-
-    <div class="tamanho-box">
-      <p>Tamanho da senha:</p>
-      <div class="contador">
-        <button onclick="alterarTamanho(-1)">−</button>
-        <span id="tamanho-valor">12</span>
-        <button onclick="alterarTamanho(1)">+</button>
+      <div class="senha-box">
+        <input type="text" id="senha" readonly placeholder="Clique para gerar uma senha" />
+        <button onclick="gerarSenha()">🔄 Gerar Senha</button>
       </div>
+
+      <div class="tamanho-box">
+        <p>Tamanho da senha:</p>
+        <div class="contador">
+          <button onclick="alterarTamanho(-1)">−</button>
+          <span id="tamanho-valor">12</span>
+          <button onclick="alterarTamanho(1)">+</button>
+        </div>
+      </div>
+
+      <div class="opcoes">
+        <label><input type="checkbox" id="maiusculas" checked> Letras Maiúsculas</label>
+        <label><input type="checkbox" id="minusculas" checked> Letras Minúsculas</label>
+        <label><input type="checkbox" id="numeros" checked> Números</label>
+      </div>
+
+      <p class="dica">Dica: combine diferentes tipos de caracteres para uma senha mais segura.</p>
     </div>
 
-    <div class="opcoes">
-      <label><input type="checkbox" id="maiusculas" checked> Letras Maiúsculas</label>
-      <label><input type="checkbox" id="minusculas" checked> Letras Minúsculas</label>
-      <label><input type="checkbox" id="numeros" checked> Números</label>
+    <div class="imagem-lateral">
+      <img src="unlock.svg" alt="Cadeado destrancado" />
     </div>
+  </main>
 
-    <p class="dica">Dica: combine diferentes tipos de caracteres para uma senha mais segura.</p>
-  </div>
+  <footer>© Pedro Prestes</footer>
 
   <script src="script.js"></script>
 </body>

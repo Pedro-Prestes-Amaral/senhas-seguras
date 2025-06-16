@@ -5,7 +5,7 @@ function alterarTamanho(valor) {
   if (novoTamanho >= 4 && novoTamanho <= 24) {
     tamanhoSenha = novoTamanho;
     document.getElementById('tamanho-valor').textContent = tamanhoSenha;
-    gerarSenha(); // atualiza a senha automaticamente
+    gerarSenha(); // atualiza automaticamente
   }
 }
 

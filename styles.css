@@ -8,10 +8,18 @@ html, body {
   height: 100%;
   background-color: #0d1b2a; /* azul marinho */
   font-family: 'Segoe UI', sans-serif;
+  color: #ffffff;
+}
+
+/* Layout principal */
+.wrapper {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  color: #ffffff;
+  gap: 30px;
+  min-height: 100vh;
+  padding-bottom: 60px;
 }
 
 .container {
@@ -63,29 +71,6 @@ button:hover {
   background-color: #0096c7;
 }
 
-.opcoes {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  gap: 8px;
-  margin-bottom: 15px;
-  background-color: #243447; /* mais claro que o fundo */
-  padding: 10px 15px;
-  border-radius: 8px;
-}
-
-.opcoes label {
-  font-size: 0.95em;
-  color: #e0e0e0;
-  cursor: pointer;
-}
-
-.dica {
-  font-size: 0.85em;
-  color: #cccccc;
-  margin-top: 10px;
-}
-
 .tamanho-box {
   margin-bottom: 20px;
   color: #e0e0e0;
@@ -120,4 +105,60 @@ button:hover {
   width: 40px;
   display: inline-block;
   text-align: center;
+}
+
+.opcoes {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 8px;
+  margin-bottom: 15px;
+  background-color: #243447;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+.opcoes label {
+  font-size: 0.95em;
+  color: #e0e0e0;
+  cursor: pointer;
+}
+
+.dica {
+  font-size: 0.85em;
+  color: #cccccc;
+  margin-top: 10px;
+}
+
+.imagem-lateral img {
+  max-width: 220px;
+  height: auto;
+}
+
+/* Rodapé */
+footer {
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #cccccc;
+  font-size: 0.9em;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+    padding-top: 20px;
+  }
+
+  .imagem-lateral img {
+    max-width: 150px;
+    margin-top: 20px;
+  }
+
+  footer {
+    font-size: 0.8em;
+  }
 }
