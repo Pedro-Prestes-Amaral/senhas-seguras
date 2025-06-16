@@ -1,88 +1,35 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.tamanho-box {
+  margin-bottom: 20px;
+  color: #e0e0e0;
 }
 
-body {
-  background-color: #0d1b2a; /* azul marinho */
-  color: #ffffff;
-  font-family: 'Segoe UI', sans-serif;
-  height: 100vh;
+.contador {
+  margin-top: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-}
-
-.container {
-  background-color: #1b263b; /* azul mais claro */
-  padding: 30px 25px;
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.4);
-  width: 100%;
-  max-width: 400px;
-  text-align: center;
-}
-
-h1 {
-  font-size: 1.8em;
-  margin-bottom: 20px;
-  color: #f1f1f1;
-}
-
-.senha-box {
-  display: flex;
-  flex-direction: column;
   gap: 10px;
-  margin-bottom: 20px;
 }
 
-#senha {
-  padding: 12px;
+.contador button {
+  width: 32px;
+  height: 32px;
   font-size: 1.2em;
-  text-align: center;
   border: none;
-  border-radius: 6px;
-  background-color: #32445a;
-  color: #00ff90;
-  letter-spacing: 1px;
-}
-
-button {
-  padding: 12px;
-  font-size: 1em;
   background-color: #0077b6;
-  border: none;
   color: white;
   border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.2s;
 }
 
-button:hover {
+.contador button:hover {
   background-color: #0096c7;
 }
 
-.opcoes {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  gap: 8px;
-  margin-bottom: 15px;
-  background-color: #243447;
-  padding: 10px 15px;
-  border-radius: 8px;
-}
-
-.opcoes label {
-  font-size: 0.95em;
-  color: #e0e0e0;
-  cursor: pointer;
-}
-
-.dica {
-  font-size: 0.85em;
-  color: #cccccc;
-  margin-top: 10px;
+#tamanho-valor {
+  font-size: 1.2em;
+  width: 40px;
+  display: inline-block;
+  text-align: center;
 }

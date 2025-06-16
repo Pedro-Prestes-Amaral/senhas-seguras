@@ -1,3 +1,14 @@
+let tamanhoSenha = 12;
+
+function alterarTamanho(valor) {
+  const novoTamanho = tamanhoSenha + valor;
+  if (novoTamanho >= 4 && novoTamanho <= 24) {
+    tamanhoSenha = novoTamanho;
+    document.getElementById('tamanho-valor').textContent = tamanhoSenha;
+    gerarSenha(); // atualiza a senha automaticamente
+  }
+}
+
 function gerarSenha() {
   const usarMaiusculas = document.getElementById('maiusculas').checked;
   const usarMinusculas = document.getElementById('minusculas').checked;
@@ -17,7 +28,6 @@ function gerarSenha() {
     return;
   }
 
-  const tamanhoSenha = 12;
   let senha = '';
   for (let i = 0; i < tamanhoSenha; i++) {
     const index = Math.floor(Math.random() * caracteres.length);
@@ -26,3 +36,6 @@ function gerarSenha() {
 
   document.getElementById('senha').value = senha;
 }
+
+// Gera senha inicial
+gerarSenha();
