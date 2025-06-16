@@ -8,13 +8,22 @@
 </head>
 <body>
   <div class="container">
-    <h1>🔐 Gerador de Senhas Seguras</h1>
+    <h1>🔐 Gerador de Senhas</h1>
+
     <div class="senha-box">
-      <input type="text" id="senha" readonly />
+      <input type="text" id="senha" readonly placeholder="Clique para gerar uma senha" />
       <button onclick="gerarSenha()">🔄 Gerar Senha</button>
     </div>
-    <p class="dica">Dica: use senhas com pelo menos 12 caracteres.</p>
+
+    <div class="opcoes">
+      <label><input type="checkbox" id="maiusculas" checked> Letras Maiúsculas</label>
+      <label><input type="checkbox" id="minusculas" checked> Letras Minúsculas</label>
+      <label><input type="checkbox" id="numeros" checked> Números</label>
+    </div>
+
+    <p class="dica">Dica: combine diferentes tipos de caracteres para uma senha mais segura.</p>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
